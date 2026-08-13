@@ -573,3 +573,88 @@ footer {
 .secondary-btn:hover::before {
   left: 100%;
 }
+/* Mobile Header Fix */
+@media (max-width: 768px) {
+  header {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+}
+/* ================================
+   MOBILE NAVIGATION
+================================ */
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .navbar {
+    position: relative;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #0b0b10;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}

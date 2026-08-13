@@ -6,19 +6,26 @@ function App() {
     <div className="portfolio">
 
       {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">VP.</div>
+      {/* Navbar */}
+<nav className="navbar">
+  <div className="logo">VP.</div>
 
-       <div className="nav-links">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</div>
-      </nav>
+  <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+
+  <label htmlFor="menu-toggle" className="menu-icon">
+    ☰
+  </label>
+
+  <div className="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
       {/* Home */}
       <section id="home" className="hero">
@@ -26,7 +33,7 @@ function App() {
           <p className="small-title">HELLO, I'M</p>
 
           <h1>
-            Vikas <span>Rajendra Patil</span>
+           ᴍʀ.vιĸααѕ <span> ραтιℓ</span>
           </h1>
 
           <h2>Software Developer</h2>
