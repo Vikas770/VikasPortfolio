@@ -1,6 +1,6 @@
 import "./App.css";
 import vikas from "./assets/vikas.jpg";
-
+import resume from "./assets/vikas cv.pdf";
 function App() {
   return (
     <div className="portfolio">
@@ -48,13 +48,14 @@ function App() {
   </a>
 
   <a
-    href="/resume.pdf"
-    download="Vikas-Patil-Resume.pdf"
-    className="secondary-btn"
-  >
-    Download Resume
-  </a>
-
+  href={resume}
+  download="Vikas_Rajendra_Patil_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume-btn"
+>
+  Download Resume
+</a>
   <a
     href="https://github.com/Vikas770"
     target="_blank"
